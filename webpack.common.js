@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        output: 'bundle.js'
+        filename: 'bundle.js'
     },
 
     module: {
@@ -14,10 +14,10 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     {
-                        loader: 'css-loader'
+                        loader: 'style-loader'
                     },
                     {
-                        loader: 'style-loader'
+                        loader: 'css-loader'
                     },
                 ]
             }

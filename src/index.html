@@ -7,30 +7,11 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Drink Finder</h1>
-        <p>FInd your favorite drink!</p>
+        <app-bar></app-bar>
     </header>
-    <div class="container">
-        <div class="search-box">
-            <h2>Search Drink</h2>
-            <input type="text" id="searchInput" placeholder="What is your favorite drink...">
-            <button onclick="search()">Cari</button>
-        </div>
-        <div id="results">
-            <!-- Hasil pencarian akan ditampilkan di sini -->
-        </div>
-    </div>
-    <script>
-        function search() {
-            const searchInput = document.getElementById("searchInput");
-            const searchTerm = searchInput.value.trim();
-            const resultsContainer = document.getElementById("results");
-            
-            // Gantilah bagian ini dengan logika pencarian sesuai dengan kebutuhan toko minuman Anda.
-            // Anda mungkin perlu menggunakan sumber data eksternal atau API untuk melakukan pencarian minuman yang sebenarnya.
-            // Sebagai contoh, kita hanya menampilkan pesan pencarian sederhana.
-            resultsContainer.innerHTML = `<p>Hasil pencarian untuk: "${searchTerm}"</p>`;
-        }
-    </script>
+    <main>
+        <search-bar></search-bar>
+        <drink-list></drink-list>
+    </main>
 </body>
 </html>
