@@ -12,11 +12,12 @@ class AppBar extends HTMLElement{
         this.shadowDOM.innerHTML =`
         <style>
             * {
-            padding: 0;
+            padding: 20px;
             margin: 0;
             box-sizing: border-box;
             }
             :host{
+
                 display: block;
                 width: 100%;
                 background-color: #333;
@@ -32,7 +33,7 @@ class AppBar extends HTMLElement{
             }
         </style>
 
-        <h1>Welcome to Drink Finder</h1>
+            <h1>Welcome to Drink Finder</h1>
         `;
     }
 };

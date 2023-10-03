@@ -9,7 +9,7 @@ class SearchBar extends HTMLElement {
     }
 
     get value(){
-        return this.shadowDOM.querySelector('#searchInput').value;
+        return this.shadowDOM.querySelector('#searchElement').value;
     }
 
     set clickEvent(event){
@@ -35,7 +35,7 @@ class SearchBar extends HTMLElement {
 
         .search-box > input:focus {
             outline: 0;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid #B4B4B3;
           }
 
         .search-box > input:focus::placeholder {
@@ -43,7 +43,7 @@ class SearchBar extends HTMLElement {
           }
           
         .search-box >  input::placeholder {
-            color: black;
+            color: #B4B4B3;
             font-weight: normal;
           }
 
@@ -74,7 +74,7 @@ class SearchBar extends HTMLElement {
 
         <div class="search-box">
             <h2>Search Drink</h2>
-            <input id="searchInput" placeholder="What is your favorite drink..." type="search">
+            <input id="searchElement" placeholder="What is your favorite drink..." type="search">
             <button id="searchButtonElement" type="submit">Search</button>
         </div>
         `;

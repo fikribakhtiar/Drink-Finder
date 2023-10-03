@@ -33,7 +33,7 @@ class DrinkList extends HTMLElement {
             }
         </style>
         `;
-        this.message += `<h2 class="placeholder">${message}</h2>`;
+        this.shadowDOM.innerHTML += `<h2 class="placeholder">${message}</h2>`;
     };
 
 }

@@ -55,7 +55,7 @@ class DrinkItem extends HTMLElement {
                 }
             </style>
 
-            <img class= "drink-pict" src="${this._drink.strImageSource}" alt="Drink Picture">
+            <img class= "drink-pict" src="${this._drink.strDrinkThumb}" alt="Drink Picture">
             <div class= "drink-info">
                 <h2>${this._drink.strDrink}</h2>
                 <h3>${this._drink.strAlcoholic}</h3>
